@@ -215,6 +215,12 @@ class App extends Component {
     //   }, offset);
     //  offset += 1000;
     // });
+    fetch('/api/hit')
+      .then(res => res.json())
+      .then((out) => {
+        console.log('Output: ', out)
+      })
+      .catch(err => console.log(err))
     if(this.el != null)
       this.scrollToBottom();
   }
