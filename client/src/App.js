@@ -297,7 +297,7 @@ class App extends Component {
                   color: '#FFF',
                   fontWeight: 300
                 }}>
-                  Welcome to
+                  Welcome to&nbsp;
                   <span className="App-logo-text">With Love</span>
                 </div>
                 <p style={{
