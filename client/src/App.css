@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+.App {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 36px;
+  overflow-y: hidden;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-logo-text {
+  -webkit-animation: color-change 1s infinite;
+  -moz-animation: color-change 1s infinite;
+  -o-animation: color-change 1s infinite;
+  -ms-animation: color-change 1s infinite;
+  animation: color-change 1s infinite;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    color: #E01F4F;
+  }
+  50% {
+    color: #951434;
+  }
+  100% {
+    color: #d15977;
+  }
+}
+
+@-moz-keyframes color-change {
+  0% {
+    color: #E01F4F;
+  }
+  50% {
+    color: #951434;
+  }
+  100% {
+    color: #d15977;
+  }
+}
+
+@-ms-keyframes color-change {
+  0% {
+    color: #d15977;
+  }
+  50% {
+    color: #951434;
+  }
+  100% {
+    color: #d15977;
+  }
+}
+
+@-o-keyframes color-change {
+  0% {
+    color: #E01F4F;
+  }
+  50% {
+    color: #951434;
+  }
+  100% {
+    color: #d15977;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: #E01F4F;
+  }
+  50% {
+    color: #951434;
+  }
+  100% {
+    color: #d15977;
+  }
+}
+
+textarea {
+  display: inline-block !important;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading__dots {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4px;
+}
+
+.loading__dots__dot {
+  background-color: #ffffff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  color: #ffffff;
+}
+
+.loading__dots__dot:nth-child(1) {
+  animation: bounce 1s 0s infinite;
+}
+
+.loading__dots__dot:nth-child(2) {
+  animation: bounce 1s 0.2s infinite;
+}
+
+.loading__dots__dot:nth-child(3) {
+  animation: bounce 1s 0.4s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

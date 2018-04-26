@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(0deg, rgba(224, 31, 31, 0.55), rgba(190, 190, 190, 1)), url(https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg);
+  background-size: cover;
+  height: 100vh;
+  overflow-y: hidden;
+}
