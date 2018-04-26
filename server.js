@@ -8,7 +8,11 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Put all API endpoints under '/api'
 app.get('/api/hit', (req, res) => {
-  res.json({welcome: 'Hi'});
+  res.json({message: 'Hi'});
+});
+
+app.get('/api/callback', (req, res) => {
+  res.json({welcome: 'Callback reached'});
 });
 
 // The "catchall" handler: for any request that doesn't
